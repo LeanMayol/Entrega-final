@@ -103,7 +103,8 @@ section {
     padding: 30px;
     text-align: center;
     font-family: "Bebas Neue", cursive;
-    font-size: 17px; }
+    font-size: 17px;
+    color: #ffffff; }
 
 .formulario {
   font-family: "Bebas Neue", cursive;
@@ -115,3 +116,13 @@ section {
   .formulario .casillas {
     background-color: #000000;
     color: #0c98f0; }
+
+/*jugadores destacados*/
+.container {
+  padding-top: 100px; }
+  .container #jugadores-destacados {
+    border: #0c98f0 ridge 4px; }
+  .container #jugadores-destacados:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.7s;
+    z-index: 500; }

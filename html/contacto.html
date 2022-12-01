@@ -87,63 +87,66 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mainContacto">
       <section class="contacto">
-        <p>
-          Esperamos que les haya gustado nuestra pagina, recuerden mandar sus
-          comentarios para poder seguir mejorando y creciendo. Asi mismo
-          esperamos sus consultas sobre cualquier inquietud que tengan.
-        </p>
-        .
+        <div>
+          <p class="textocontacto">
+            Esperamos que les haya gustado nuestra pagina, recuerden mandar sus
+            comentarios para poder seguir mejorando y creciendo. Asi mismo
+            esperamos sus consultas sobre cualquier inquietud que tengan.
+          </p>
+        </div>
+      </section>
+      <section class="contacto">
+        <div>
+          <form action="" class="formulario">
+            <fieldset>
+              <legend>Formulario de contacto</legend>
+              <div>
+                <label for="Name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ej: Leandro"
+                  class="casillas"
+                />
+              </div>
+              <div>
+                <label for="Apellido">Apellido</label>
+                <input
+                  type="text"
+                  name="Apellido"
+                  placeholder="Ej: Mayol"
+                  class="casillas"
+                />
+              </div>
+              <div>
+                <label for="mail"> E-mail</label>
+                <input
+                  type="email"
+                  name="mail"
+                  required
+                  placeholder="Ej: Leandro.mayol@gmail.com"
+                  class="casillas"
+                />
+              </div>
 
-        <form action="" class="formulario">
-          <fieldset>
-            <legend>Formulario de contacto</legend>
+              <div>
+                <label for="comentarios">Escribe tu consulta</label><br />
+                <textarea
+                  name="Comentarios"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="casillas"
+                ></textarea>
+              </div>
 
-            <div>
-              <label for="Name">Nombre</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Ej: Leandro"
-                class="casillas"
-              />
-            </div>
-            <div>
-              <label for="Apellido">Apellido</label>
-              <input
-                type="text"
-                name="Apellido"
-                placeholder="Ej: Mayol"
-                class="casillas"
-              />
-            </div>
-            <div>
-              <label for="mail"> E-mail</label>
-              <input
-                type="email"
-                name="mail"
-                required
-                placeholder="Ej: Leandro.mayol@gmail.com"
-                class="casillas"
-              />
-            </div>
-
-            <div>
-              <label for="comentarios">Escribe tu consulta</label><br />
-              <textarea
-                name="Comentarios"
-                id=""
-                cols="30"
-                rows="10"
-                class="casillas"
-              ></textarea>
-            </div>
-
-            <input type="submit" value="Enviar datos" />
-            <input type="Reset" value="Borrar datos" />
-          </fieldset>
-        </form>
+              <input type="submit" value="Enviar datos" />
+              <input type="Reset" value="Borrar datos" />
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
     <!--Footer-->

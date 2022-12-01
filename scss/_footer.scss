@@ -1,0 +1,15 @@
+footer {
+  grid-area: footer;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: auto;
+}
+.copy {
+  color: #0c98f0;
+  text-align: center;
+  padding-top: 2rem;
+  font-family: "Bebas Neue", cursive;
+}

@@ -1,6 +1,13 @@
 @import "header";
 @import "footer";
 
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -35,6 +42,7 @@ h2 {
   padding: 40px;
   margin: 50px;
 }
+/*Titulos*/
 .img {
   width: 800px;
   height: 500px;
@@ -46,15 +54,17 @@ section {
   text-align: center;
   margin: 20px;
   padding: 20px;
-  p {
-    width: 600px;
-    margin: 20px;
-    padding: 30px;
-    text-align: center;
-    font-family: "Bebas Neue", cursive;
-    font-size: 17px;
-    color: #ffffff;
-    background-color: #24212163;
+  span {
+    margin-top: 40px;
+    div {
+      width: 600px;
+      padding: 30px;
+      text-align: center;
+      font-family: "Bebas Neue", cursive;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #24212163;
+    }
   }
 }
 /*Contacto*/
@@ -98,10 +108,7 @@ section {
 /*Responsive celular*/
 @media (max-width: 460px) {
   section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexcolumn();
     margin: auto;
     padding: auto;
     width: 50%;
@@ -114,8 +121,7 @@ section {
     height: 80px;
   }
   .contacto {
-    display: flex;
-    flex-direction: column;
+    @include flexcolumn();
     .textocontacto {
       font-size: 15px;
     }
@@ -135,10 +141,7 @@ section {
     width: 100vw;
   }
   section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexcolumn();
     margin: auto;
     padding: auto;
     width: 50%;
@@ -152,7 +155,6 @@ section {
   }
   .mainContacto {
     padding-bottom: 100px;
-    display: flex;
-    flex-direction: column;
+    @include flexcolumn();
   }
 }

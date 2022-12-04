@@ -22,6 +22,7 @@ header {
     justify-content: flex-end;
     align-items: flex-end; }
     header ul li {
+      background-color: #000000;
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -117,13 +118,20 @@ section {
   padding-top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
-  .mainContacto p {
+  justify-content: space-evenly;
+  height: 49vw; }
+  .mainContacto .textocontacto {
     padding: 20px;
     text-align: center;
-    font-size: 30px; }
+    font-size: 30px;
+    width: 457px;
+    font-family: "Bebas Neue", cursive;
+    color: #ffffff; }
   .mainContacto .formulario {
     font-family: "Bebas Neue", cursive;
+    padding-right: 30px;
+    padding-top: 40px;
+    margin: 50px;
     width: 450px;
     height: 400px;
     color: #0c98f0;
@@ -152,7 +160,7 @@ section {
     margin: auto;
     padding: auto;
     width: 50%; }
-    section p {
+    section span div {
       width: 150px; }
   .img {
     width: 150px;
@@ -173,8 +181,8 @@ section {
 /*Responsive tablet*/
 @media (max-width: 768px) {
   body {
-    overflow-x: hidden;
-    width: 100vw; }
+    overflow-x: visible;
+    width: 80vw; }
   section {
     display: flex;
     flex-direction: column;
@@ -183,7 +191,7 @@ section {
     margin: auto;
     padding: auto;
     width: 50%; }
-    section p {
+    section span div {
       width: 350px; }
     section .img {
       width: 400px;
@@ -193,4 +201,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .ftder {
+    order: -1; } }

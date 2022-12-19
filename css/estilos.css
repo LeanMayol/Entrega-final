@@ -135,8 +135,7 @@ section {
     margin: 50px;
     width: 450px;
     height: 400px;
-    color: #0c98f0;
-    float: right; }
+    color: #0c98f0; }
   .mainContacto .casillas {
     background-color: #24212163;
     color: #0c98f0; }
@@ -147,8 +146,8 @@ section {
   .container #jugadores-destacados {
     border: #0c98f0 ridge 4px; }
   .container #jugadores-destacados:hover {
-    transform: scale(1.3, 1.3);
-    transition: 0.7s;
+    transform: scale(1.2, 1.2);
+    transition: 0.4s;
     z-index: 500; }
 
 /*Canciones de cancha*/
@@ -178,6 +177,10 @@ section {
   body {
     overflow-x: visible;
     width: 80vw; }
+  h1 {
+    font-size: 40px; }
+  h2 {
+    font-size: 30px; }
   section {
     display: flex;
     flex-direction: column;
@@ -185,18 +188,22 @@ section {
     align-items: center;
     margin: auto;
     padding: auto;
-    width: 50%; }
-    section span div {
-      width: 350px; }
+    width: 50%;
+    margin-left: 40px;
+    padding-left: 40px; }
     section .img {
       width: 400px;
       height: 300px; }
+  .video {
+    width: auto; }
   .mainContacto {
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; }
+    .mainContacto .contacto .formulario {
+      width: auto;
+      height: auto; }
   .ftder {
     order: -1; }
   footer {
@@ -215,19 +222,9 @@ section {
     padding: auto;
     width: 50%; }
     section span div {
-      width: 150px; }
+      width: 380px; }
   .img {
-    width: 150px;
+    width: auto;
     height: 80px; }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .contacto .textocontacto {
-      font-size: 15px; }
-    .contacto .formulario {
-      width: 450px;
-      height: 400px;
-      padding-bottom: 100px;
-      margin-bottom: 50px; } }
+  .contacto .textocontacto {
+    font-size: 15px; } }

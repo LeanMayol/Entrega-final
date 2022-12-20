@@ -43,7 +43,6 @@ header {
         text-decoration: underline #e6df14 2px; }
 
 footer {
-  grid-area: footer;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -209,7 +208,8 @@ section {
   footer {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center;
+    margin-top: 250%; } }
 
 /*Responsive celular*/
 @media (max-width: 460px) {
@@ -227,4 +227,6 @@ section {
     width: auto;
     height: 80px; }
   .contacto .textocontacto {
-    font-size: 15px; } }
+    font-size: 15px;
+    padding-left: 30px;
+    width: 300px; } }

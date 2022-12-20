@@ -187,6 +187,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 250%;
   }
 }
 
@@ -210,6 +211,8 @@ section {
   .contacto {
     .textocontacto {
       font-size: 15px;
+      padding-left: 30px;
+      width: 300px;
     }
   }
 }
